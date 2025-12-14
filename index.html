@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification" style="display:none; padding:10px; margin-bottom:10px; border-radius:5px;"></div>
+    <div style="margin-bottom: 20px;">
+        <label>Тип події:
+            <select id="filter-type">
+                <option value="">Всі</option>
+                <option value="концерт">Концерт</option>
+                <option value="театр">Театр</option>
+                <option value="кіно">Кіно</option>
+            </select>
+        </label>
+        <label>Сортувати за:
+            <select id="sort-by">
+                <option value="date">Датою</option>
+                <option value="price">Ціною</option>
+            </select>
+        </label>
+    </div>
+    <div id="events-list"></div>
+    <script src="main.js"></script>
+</body>
+</html>
