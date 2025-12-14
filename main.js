@@ -1,8 +1,4 @@
 // --- Адаптер для старого API ---
-// Приклад старого API:
-// [
-//   { event_name: '...', event_type: '...', event_date: '...', event_price: 100, tickets: 50, place: '...' }
-// ]
 function adaptOldApiData(oldData) {
 	return oldData.map(item => ({
 		id: Math.random().toString(36).slice(2),
